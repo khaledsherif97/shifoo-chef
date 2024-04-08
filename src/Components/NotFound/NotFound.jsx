@@ -5,8 +5,11 @@ import Not from "../../Assets/imges/404 Error with a cute animal-cuate.png"
 const NotFound = () => {
   return (
    <>
-   <div style={{height:"500px"}} className=' container position-relative'>
-   <img style={{height:"500px", width:"700px" , position: "absolute" ,left: "200px"}} src={Not} className=''/>
+   <div  className=' container  min-hi'>
+    <div className='w-50 mx-auto'> 
+    <img src={Not} className='w-100'/>
+    </div>
+   
    </div>
    </>
   )
