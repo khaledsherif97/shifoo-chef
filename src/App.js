@@ -1,24 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import NotFound from './Components/NotFound/NotFound';
+import LayOut from './Components/LayOut/LayOut';
+import Search from './Components/Search/Search';
+import Categories from './Components/Categories/Categories';
+import Area from './Components/Area/Area';
+import Ingredients from './Components/Ingredients/Ingredients';
+import Home from './Components/Home/Home';
+import SubCategories from './Components/SubCategories/SubCategories';
+import SubArea from './Components/SubArea/SubArea';
+import SubIngredient from './Components/SubIngredient/SubIngredient';
+import MealDetails from './Components/MealDetails/MealDetails';
 
 function App() {
+
+  let routes=createBrowserRouter([
+    { path:"/",element:<LayOut />,children:[
+      {index:true,element:<Home />},
+      {path:"/search",element:<Search />},
+      {path:"/categories",element:<Categories />},
+      {path:"/area",element:<Area />},
+      {path:"/ingredients",element:<Ingredients />},
+      {path:"/subCategories/:strCategory",element:<SubCategories/>},
+      {path:"/subArea/:strArea",element:<SubArea/>},
+      {path:"/subIngredient/:strIngredient",element:<SubIngredient/>},
+      {path:"/mealDetails/:idMeal",element:<MealDetails/>},
+     
+  
+      {path:"*",element:<NotFound />},
+  
+    ]}
+  ])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <RouterProvider router={routes}/>
+   </>
   );
 }
 
