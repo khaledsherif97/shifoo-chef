@@ -30,7 +30,7 @@ const SubCategories = () => {
         <h2 className='fw-bolder fs-1 bg-op text-white rounded-3 p-2'>Sub Categories:</h2>
 
         {data?.data?.meals.map((scat)=> <div key={scat.idMeal} style={{height:"250px"}} className='col-md-4 my-2 rounded-3 position-relative item overflow-hidden '>
-        <Link className=' text-decoration-none' to={'mealDetails/'+scat.idMeal}>
+        <Link className=' text-decoration-none' to={'/mealDetails/'+scat.idMeal}>
           <img  src={scat.strMealThumb} className='w-100 h-100 bg-main rounded-3 '/>
           <div style={{height:"250px"}} className='bg-danger-subtle  rounded-3 textMeal opacity-75 position-relative'>
             <h4 className='mainColor fw-bold position-absolute top-50 start-0'>{scat.strMeal}</h4>

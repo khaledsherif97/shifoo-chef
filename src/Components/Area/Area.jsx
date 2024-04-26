@@ -31,7 +31,7 @@ const Area = () => {
         <h2 className='fw-bolder fs-1 bg-op text-white rounded-3 p-2'>Areas:</h2>
         {data?.data?.meals.map((area)=> <div className='col-md-3 '>
 
-        <Link className=' text-decoration-none' to={'subArea/'+area.strArea}>
+        <Link className=' text-decoration-none' to={'/subArea/'+area.strArea}>
           <div className='rounded-3 bg-op mx-1 my-2 text-center text-white py-2'>
         <i className="fa-solid fa-house-laptop fa-4x"></i>
         <h4>{area.strArea}</h4>

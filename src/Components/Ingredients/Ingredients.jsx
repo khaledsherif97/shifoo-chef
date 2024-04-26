@@ -29,7 +29,7 @@ const Ingredients = () => {
         <h2 className='fw-bolder fs-1 bg-main text-white rounded-3 p-2'>Ingredients:</h2>
         {data?.data?.meals.map((ing)=> <div key={ing.idIngredient} className='col-md-4 '>
 
-        <Link className=' text-decoration-none' to={'subIngredient/'+ing.strIngredient}>
+        <Link className=' text-decoration-none' to={'/subIngredient/'+ing.strIngredient}>
           <div className='rounded-3 bg-main mx-1 my-2 text-center text-white py-2'>
           <i className="fa-solid fa-drumstick-bite pe-2 display-2"></i>
           <h4>{ing.strIngredient}</h4>

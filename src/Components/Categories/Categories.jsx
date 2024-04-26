@@ -31,7 +31,7 @@ const Categories = () => {
         <h2 className='fw-bolder fs-1 bg-op text-white rounded-3 p-2'>Categories:</h2>
        
         {data?.data?.categories.map((cat)=> <div key={cat.idCategory} style={{height:"250px"}} className='col-md-4 my-2 rounded-3 position-relative item overflow-hidden '>
-        <Link className=' text-decoration-none' to={'subCategories/'+cat.strCategory}>
+        <Link className=' text-decoration-none' to={'/subCategories/'+cat.strCategory}>
           <img  src={cat.strCategoryThumb} className='w-100 h-100 bg-op rounded-3 '/>
           <div style={{height:"250px"}} className='bg-danger-subtle  rounded-3 textMeal opacity-75'>
             <h4 className='mainColor fw-bold text-center '>{cat.strCategory}</h4>
