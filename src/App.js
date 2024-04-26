@@ -17,7 +17,7 @@ function App() {
 
   let routes=createBrowserRouter([
     { path:"shifoo-chef/",element:<LayOut />,children:[
-      {index:true,element:<Home />},
+      {path:"",element:<Home />},
       {path:"/search",element:<Search />},
       {path:"/categories",element:<Categories />},
       {path:"/area",element:<Area />},
