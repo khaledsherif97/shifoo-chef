@@ -16,7 +16,7 @@ import MealDetails from './Components/MealDetails/MealDetails';
 function App() {
 
   let routes=createBrowserRouter([
-    { path:"/",element:<LayOut />,children:[
+    { path:"shifoo-chef/",element:<LayOut />,children:[
       {index:true,element:<Home />},
       {path:"/search",element:<Search />},
       {path:"/categories",element:<Categories />},
