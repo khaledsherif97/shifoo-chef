@@ -18,14 +18,14 @@ function App() {
   let routes=createBrowserRouter([
     { path:"shifoo-chef/",element:<LayOut />,children:[
       {path:"",element:<Home />},
-      {path:"/search",element:<Search />},
-      {path:"/categories",element:<Categories />},
-      {path:"/area",element:<Area />},
-      {path:"/ingredients",element:<Ingredients />},
-      {path:"/subCategories/:strCategory",element:<SubCategories/>},
-      {path:"/subArea/:strArea",element:<SubArea/>},
-      {path:"/subIngredient/:strIngredient",element:<SubIngredient/>},
-      {path:"/mealDetails/:idMeal",element:<MealDetails/>},
+      {path:"search",element:<Search />},
+      {path:"categories",element:<Categories />},
+      {path:"area",element:<Area />},
+      {path:"ingredients",element:<Ingredients />},
+      {path:"subCategories/:strCategory",element:<SubCategories/>},
+      {path:"subArea/:strArea",element:<SubArea/>},
+      {path:"subIngredient/:strIngredient",element:<SubIngredient/>},
+      {path:"mealDetails/:idMeal",element:<MealDetails/>},
      
   
       {path:"*",element:<NotFound />},

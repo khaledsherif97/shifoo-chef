@@ -30,7 +30,7 @@ const SubIngredient = () => {
         <h2 className='fw-bolder fs-1 bg-main text-white rounded-3 p-2'>Sub Ingredient:</h2>
 
         {data?.data?.meals.map((sing)=> <div key={sing.idMeal} style={{height:"250px"}} className='col-md-4 my-2 rounded-3 position-relative item overflow-hidden '>
-        <Link className=' text-decoration-none' to={'/mealDetails/'+sing.idMeal}>
+        <Link className=' text-decoration-none' to={'mealDetails/'+sing.idMeal}>
           <img  src={sing.strMealThumb} className='w-100 h-100 bg-main rounded-3 '/>
           <div style={{height:"250px"}} className='bg-danger-subtle  rounded-3 textMeal opacity-75 position-relative'>
             <h4 className='mainColor fw-bold position-absolute top-50 start-0'>{sing.strMeal}</h4>

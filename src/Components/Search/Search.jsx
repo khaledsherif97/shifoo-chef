@@ -66,7 +66,7 @@ const Search = () => {
      {meals.length > 0 && (
         <div className='row '>
         {meals.map((ser)=> <div key={ser.idMeal} style={{height:"250px"}} className='col-md-4 my-2 rounded-3 position-relative item overflow-hidden '>
-        <Link className=' text-decoration-none' to={'/mealDetails/'+ser.idMeal}>
+        <Link className=' text-decoration-none' to={'mealDetails/'+ser.idMeal}>
           <img  src={ser.strMealThumb} className='w-100 h-100 bg-op rounded-3 '/>
           <div style={{height:"250px"}} className='bg-danger-subtle  rounded-3 textMeal opacity-75'>
             <h4 className='mainColor fw-bold text-center '>{ser.strMeal}</h4>
