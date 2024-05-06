@@ -32,7 +32,7 @@ function App() {
       {path:"subCategories/:strCategory/mealDetails/:idMeal",element:<MealDetails/>},
       {path:"categories/subCategories/:strCategory/mealDetails/:idMeal",element:<MealDetails/>},
       {path:"area/subArea/:strArea/mealDetails/:idMeal",element:<MealDetails/>},
-      {path:"ingredi ents/subIngredient/:strIngredient/mealDetails/:idMeal",element:<MealDetails/>},
+      {path:"ingredients/subIngredient/:strIngredient/mealDetails/:idMeal",element:<MealDetails/>},
       {path:"search/mealDetails/:idMeal",element:<MealDetails/>},
 
      
