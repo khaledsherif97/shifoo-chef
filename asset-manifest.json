@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shifoo-chef/static/css/main.cfbb3254.css",
-    "main.js": "/shifoo-chef/static/js/main.1a0292ed.js",
+    "main.css": "/shifoo-chef/static/css/main.eed3d06d.css",
+    "main.js": "/shifoo-chef/static/js/main.19915198.js",
     "static/js/453.3c05a470.chunk.js": "/shifoo-chef/static/js/453.3c05a470.chunk.js",
     "static/media/fa-solid-900.ttf": "/shifoo-chef/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
     "static/media/404 Error with a cute animal-cuate.png": "/shifoo-chef/static/media/404 Error with a cute animal-cuate.53983abfcecfff4587da.png",
@@ -19,12 +19,12 @@
     "static/media/fa-v4compatibility.woff2": "/shifoo-chef/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "static/media/logo.svg": "/shifoo-chef/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/shifoo-chef/index.html",
-    "main.cfbb3254.css.map": "/shifoo-chef/static/css/main.cfbb3254.css.map",
-    "main.1a0292ed.js.map": "/shifoo-chef/static/js/main.1a0292ed.js.map",
+    "main.eed3d06d.css.map": "/shifoo-chef/static/css/main.eed3d06d.css.map",
+    "main.19915198.js.map": "/shifoo-chef/static/js/main.19915198.js.map",
     "453.3c05a470.chunk.js.map": "/shifoo-chef/static/js/453.3c05a470.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfbb3254.css",
-    "static/js/main.1a0292ed.js"
+    "static/css/main.eed3d06d.css",
+    "static/js/main.19915198.js"
   ]
 }
