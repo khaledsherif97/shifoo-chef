@@ -7,6 +7,8 @@ import Categories from './../Categories/Categories';
 import img1 from "../../Assets/imges/1.jpeg"
 import img2 from "../../Assets/imges/2.jpg"
 import img3 from "../../Assets/imges/3.jpg"
+import { Fade, Text } from 'animation-react'
+import Game from '../Game/Game'
 
 const Home = () => {
 
@@ -24,16 +26,19 @@ const Home = () => {
     <>
     <div className=' container my-5 min-hi'>
     <div className="row">
-      <div className="col-4 p-0">
-        <img src={img1} style={{height:"200px"}} className='w-100 rounded-start-3'/>
-        <img src={img2} style={{height:"200px"}} className='w-100 rounded-start-3'/>
-
+      <div className="col-md-4 p-0">
+        <img src={img1} style={{height:"220px"}} className='w-100 rounded-3'/>
+        <img src={img2} style={{height:"220px"}} className='w-100 rounded-3'/>
       </div>
-      <div className="col-8 p-0">
-      <img src={img3} style={{height:"400px"}} className='w-100 rounded-end-3'/>
+      <div className="col-md-8 p-0 border border-4 border-danger rounded-4">
+       
+       <Game/>
+     
+     
       </div>
     </div>
     </div>
+    
     <Categories/>
     </>
   )

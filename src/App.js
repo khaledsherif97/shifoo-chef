@@ -16,16 +16,16 @@ import MealDetails from './Components/MealDetails/MealDetails';
 function App() {
 
   let routes=createBrowserRouter([
-    { path:"/",element:<LayOut />,children:[
+    { path:"shifoo-chef/",element:<LayOut />,children:[
       {index:true,element:<Home />},
-      {path:"/search",element:<Search />},
-      {path:"/categories",element:<Categories />},
-      {path:"/area",element:<Area />},
-      {path:"/ingredients",element:<Ingredients />},
-      {path:"/subCategories/:strCategory",element:<SubCategories/>},
-      {path:"/subArea/:strArea",element:<SubArea/>},
-      {path:"/subIngredient/:strIngredient",element:<SubIngredient/>},
-      {path:"/mealDetails/:idMeal",element:<MealDetails/>},
+      {path:"/shifoo-chef/search",element:<Search />},
+      {path:"/shifoo-chef/categories",element:<Categories />},
+      {path:"/shifoo-chef/area",element:<Area />},
+      {path:"/shifoo-chef/ingredients",element:<Ingredients />},
+      {path:"/shifoo-chef/subCategories/:strCategory",element:<SubCategories/>},
+      {path:"/shifoo-chef/subArea/:strArea",element:<SubArea/>},
+      {path:"/shifoo-chef/subIngredient/:strIngredient",element:<SubIngredient/>},
+      {path:"/shifoo-chef/mealDetails/:idMeal",element:<MealDetails/>},
      
   
       {path:"*",element:<NotFound />},

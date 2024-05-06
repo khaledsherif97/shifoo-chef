@@ -35,7 +35,7 @@ const Categories = () => {
           <img  src={cat.strCategoryThumb} className='w-100 h-100 bg-op rounded-3 '/>
           <div style={{height:"250px"}} className='bg-danger-subtle  rounded-3 textMeal opacity-75'>
             <h4 className='mainColor fw-bold text-center '>{cat.strCategory}</h4>
-            <p className='text-center text-black'>{cat.strCategoryDescription}</p>
+            <p className='text-center text-black'>{cat.strCategoryDescription.split(" ").slice(0,30).join(" ")}</p>
             
 
           </div>
